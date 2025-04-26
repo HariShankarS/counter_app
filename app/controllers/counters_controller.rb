@@ -1,5 +1,6 @@
 class CountersController < ApplicationController
   before_action :set_counter
+  skip_before_action :verify_authenticity_token
 
   def show
   end
